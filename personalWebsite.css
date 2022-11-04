@@ -1,0 +1,85 @@
+
+:root{
+    --bg-color: rgb(20, 20, 20);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    align-items: center;
+    background-color: var(--bg-color);
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    justify-content: center;
+
+}
+.siteHeader {
+    font-family: 'Dosis', serif;
+    font-size: 60px;
+    /*cursor: none;  maybe idk */
+    cursor: default;
+    margin: auto;
+    width: 25%;
+    border: 5px solid aqua;
+    border-radius: 10px;
+    padding: 2px;
+    color: transparent;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #fe9c12);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+    text-align: center;
+}
+@keyframes animate{
+    0%{
+        background-position:0 100%;
+    }
+    50%{
+        background-position:100% 0;
+    }
+    100%{
+        background-position:0 100%;
+    }
+}
+
+#sideBarBtns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 916px;
+    width: calc(100% - 20px);
+    margin: auto;
+    width: 50%;
+
+}
+
+.sidebarBtns{
+    color: aqua;
+    font-family: 'Dosis', serif;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.02);
+    background: radial-gradient(
+        rgba(255, 255, 255, 0.2) 0.8%,
+        transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 4vmin 4vmin;
+
+    height: 260px;
+    width: 300px;
+    margin: auto;
+    grid-column: auto;
+    grid-row: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    
+}
+.sidebarBtns:hover{
+    transition: 150ms ease;
+    font-size: 38px;
+    color: rgb(0, 255, 200)
+}
