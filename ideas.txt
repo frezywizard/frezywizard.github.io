@@ -1,0 +1,1 @@
+In the future add a page for each button. have animations of the dots on the page as it loads
