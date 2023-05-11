@@ -1,11 +1,5 @@
 
-
-
-
-
 let allThemFacts = document.querySelector("#sideBarBtns");
-
-
 document.addEventListener("DOMContentLoaded", function() {
     var aboutMe = document.getElementById("aboutMe");
     var resume = document.getElementById("resume");
